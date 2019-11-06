@@ -1,0 +1,26 @@
+<archetype-descriptor
+        xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0
+            http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+        xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="mindy-archetype">
+    <fileSets>
+        <fileSet filtered="true" packaged="true">
+            <directory>src/main/java</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources/static/images</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet filtered="true">
+            <directory/>
+            <includes>
+                <include>build_and_run.sh</include>
+                <include>Dockerfile</include>
+                <include>local.yml</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>

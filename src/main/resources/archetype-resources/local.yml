@@ -1,0 +1,22 @@
+server:
+  port: 8000
+  ssl:
+    enabled: false
+
+spring:
+  datasource:
+    url: x
+
+security:
+  oauth2:
+    client:
+      clientId: x
+      clientSecret: x
+
+objectStorage:
+  imageBucket:
+    accessKeyId: x
+    secretAccessKey: x
+
+site:
+  url: http://localhost:8000

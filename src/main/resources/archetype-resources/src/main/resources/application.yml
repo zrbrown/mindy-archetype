@@ -1,0 +1,17 @@
+spring.jpa.properties.hibernate.default_schema: application
+
+security.oauth2.client.clientId: x
+
+objectStorage:
+  imageBucket:
+    name: images
+    url: x
+    region: nyc3
+
+site.url: x
+
+staticContent.markdownToName:
+  page: Welcome!
+
+userAuthorization.userPermissions:
+  yourname: ADMIN, USER
