@@ -8,10 +8,10 @@ objectStorage:
     url: x
     region: nyc3
 
-site.url: x
+site.url: ${projectUrl}
 
 staticContent.markdownToName:
   page: Welcome!
 
 userAuthorization.userPermissions:
-  yourname: ADMIN, USER
+  ${defaultUser}: ADMIN, USER

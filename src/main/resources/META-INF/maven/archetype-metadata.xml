@@ -11,7 +11,7 @@
         <fileSet>
             <directory>src/main/resources/static/images</directory>
         </fileSet>
-        <fileSet>
+        <fileSet filtered="true">
             <directory>src/main/resources</directory>
         </fileSet>
         <fileSet filtered="true">
@@ -20,7 +20,25 @@
                 <include>build_and_run.sh</include>
                 <include>Dockerfile</include>
                 <include>local.yml</include>
+                <include>README.md</include>
             </includes>
         </fileSet>
     </fileSets>
+    <requiredProperties>
+        <requiredProperty key="cssName">
+            <defaultValue>styles</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="containerName">
+            <defaultValue>mindyApp</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="pageTitle">
+            <defaultValue>Created with Mindy</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="projectUrl">
+            <defaultValue>https://eightlives.net</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="defaultUser">
+            <defaultValue>username</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
 </archetype-descriptor>
